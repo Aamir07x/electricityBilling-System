@@ -1,5 +1,7 @@
 package com.electricityBilling.model;
 
+import java.sql.Connection;
+
 public class electricityBilling {
 	
 	private int user_id;
@@ -66,6 +68,11 @@ public class electricityBilling {
 			this.transaction_id = transaction_id;
 			this.receipt_id = receipt_id;
 			this.receipt_amount = receipt_amount;
+		}
+
+
+		public electricityBilling(String name, String email2, String country2, String password) {
+			// TODO Auto-generated constructor stub
 		}
 
 
@@ -268,6 +275,12 @@ public class electricityBilling {
 					+ ", status=" + status + ", payment_id=" + payment_id + ", amount_paid=" + amount_paid
 					+ ", payment_method=" + payment_method + ", transaction_id=" + transaction_id + ", receipt_id="
 					+ receipt_id + ", receipt_amount=" + receipt_amount + "]";
+		}
+
+
+		public Connection getConnection() {
+			// TODO Auto-generated method stub
+			return null;
 		}
 	    
 	    

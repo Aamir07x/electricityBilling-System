@@ -90,54 +90,54 @@ input[type="submit"]:hover, input[type="reset"]:hover, input[type="checkbox"]:ho
 </head>
 <body>
 
-	<form action="login.html" onsubmit="return validateForm()">
+	<form action="insert" method="post" onsubmit="return validateForm()">
 
 		<h2>Registration / Login</h2>
-		<p>
+		<fieldset class="form-group">
 			<label for="name">Name: </label> <input type="text" id="name"
 				name="name" placeholder="Enter your full name" required> <span
 				id="name-error" class="error-massage"></span>
-		</p>
+		</fieldset>
 
-		<p>
+		<fieldset class="form-group">
 			<label for="email">Email:</label> <input type="email" id="email"
 				name="email" placeholder="Enter your E-mail" required> <span
 				id="email-error" class="error-massage"></span>
-		</p>
+		</fieldset>
 
-		<p>
+		<fieldset class="form-group">
 			<label for="contactNumber">Contact Number: </label> <input
 				type="number" id="contactNumber" name="contactNumber"
 				placeholder="Enter your contact Number" required> <span
 				id="contactNumber-error" class="error-massage"></span>
-		</p>
+		</fieldset>
 
-		<p>
+		<fieldset class="form-group">
 			<label for="userName">Username:</label> <input type="text"
 				id="userName" name="userName" placeholder="Enter your userName">
 			<span id="userName-error" class="error-massage"></span>
-		</p>
+		</fieldset>
 
-		<p>
+		<fieldset class="form-group">
 			<label for="password">Password:</label> <input type="password"
 				id="password" name="password" placeholder="Enter your password"
 				required> <span id="password-error" class="error-massage"></span>
-		</p>
+		</fieldset >
 
-		<p>
+		<fieldset class="form-group">
 			<label for="confirmPassword">Confirm Password:</label> <input
 				type="password" id="confirmPassword" name="confirmPassword"
 				placeholder="Re-enter your password" required> <span
 				id="confirmPassword-error" class="error-massage"></span>
-		</p>
+		</fieldset>
 
-		<p>
+		<fieldset class="form-group">
 			<label for="address">Address: </label> <input type="text"
 				id="address" name="address" placeholder="Enter your address">
 			<span id="address-error" class="error-massage"></span>
-		</p>
+		</fieldset>
 
-		<p>
+		<fieldset class="form-group">
 			<label for="country">Country:</label> <select name="country"
 				id="country">
 				<option value="SelectCountry">Select Country</option>
@@ -146,23 +146,23 @@ input[type="submit"]:hover, input[type="reset"]:hover, input[type="checkbox"]:ho
 				<option value="UAE">UAE</option>
 				<option value="OTHERS">OTHERS</option>
 			</select> <span id="country-error" class="error-massage"></span>
-		</p>
+		</fieldset >
 
 
-		<p>
+		<fieldset class="form-group">
 			<input type="checkbox" id="agree" name="agree"> <label
 				for="agree">I agree that all informations are correct as per
 				my knowledge.</label> <span id="agree-error" class="error-massage"></span>
 
-		</p>
+		</fieldset>
 
 		<a href="login.jsp">Already Have an Account</a>
 
-		<p>
+		<fieldset class="form-group">
 			<input type="submit" class="btn" id="submit" value="submit"
 				name="submit" onclick="return validateForm()"> <input
 				type="reset" class="btn" id="reset" value="Reset" name="reset">
-		</p>
+		</fieldset>
 
 
 	</form>
